@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UI_Game : UIObject
+public class UI_Complete : UIObject
 {
     // Start is called before the first frame update
     void Start()

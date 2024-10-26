@@ -19,11 +19,8 @@ public class UI_StartGame : UIObject
     public override void Init()
     {
         base.Init();
-        Button startGameBtn = this.transform.Find("Btn_StartGame").GetComponent<Button>();
-        startGameBtn.onClick.AddListener(StartGame);
-        Button exitGameBtn = this.transform.Find("Btn_ExitGame").GetComponent<Button>();
-        exitGameBtn.onClick.AddListener(ExitGame);
-
+        UITool.RegistButton(this,"Btn_StartGame", StartGame);
+        UITool.RegistButton(this, "Btn_ExitGame", ExitGame);
     }
 
     public override void Open()

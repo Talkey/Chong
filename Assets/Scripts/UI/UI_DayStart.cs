@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UI_Game : UIObject
+public class UI_DayStart : UIObject
 {
     // Start is called before the first frame update
     void Start()
@@ -14,5 +14,12 @@ public class UI_Game : UIObject
     void Update()
     {
         
+    }
+
+    public override void Open()
+    {
+        base.Open();
+
+
     }
 }
