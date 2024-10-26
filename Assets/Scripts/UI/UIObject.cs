@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.IO;
 using UnityEngine.UI;
+using System;
 
 public class UIObject : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class UIObject : MonoBehaviour
 
     public virtual void Close()
     {
-
+        this.DestroyMySelf();
     }
 
     public virtual void Open()
@@ -21,7 +22,12 @@ public class UIObject : MonoBehaviour
 
     }    
 
-    public virtual void Destroy()
+    public virtual void DestroyMySelf()
+    {
+        GameObject.Destroy(this);
+    }
+
+    public virtual void Hide()
     {
 
     }
