@@ -11,6 +11,7 @@ public static class UIData
     public static string GameOutUI = "UIPrefabs/UI_GameOut";
     public static string LoadingUI = "UIPrefabs/UI_Loading";
     public static string CompleteUI = "UIPrefabs/UI_Complete";
+    public static string DayStartUI = "UIPrefabs/UI_DayStart";
 }
 
 public static class InGameData
